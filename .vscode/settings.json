@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Cadmoeus.sln"
+    "dotnet.defaultSolution": "EXPARIMANTO.sln"
 }
