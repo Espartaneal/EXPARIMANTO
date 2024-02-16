@@ -6018,13 +6018,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWeapon: 1
-  isShooting: 1
+  isShooting: 0
   readyToShoot: 0
   shootingDelay: 2
   bulletsPerBurst: 3
   currentBurst: 2
   SpreadIntensity: 0
-  muzzleEffect: {fileID: 1000010254994808, guid: 9defeac88977c0d448aa4541073ee9e4, type: 3}
+  muzzleEffect: {fileID: 6457378470599464801}
   bulletPrefab: {fileID: 5913829272719216377}
   bulletspawn: {fileID: 1070090622}
   bulletVelocity: 500
