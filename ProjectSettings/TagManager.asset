@@ -8,6 +8,10 @@ TagManager:
   - Enemy
   - Waypoints
   - ZombieHand
+  - Weapon
+  - SecondCamera
+  - BulletSpawn
+  - Target
   layers:
   - Default
   - TransparentFX
