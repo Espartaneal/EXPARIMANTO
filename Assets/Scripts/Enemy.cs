@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
             }
 
 
-            animator.SetTrigger("DIE");
+            
             
         }
         else
