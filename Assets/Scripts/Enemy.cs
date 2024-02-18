@@ -50,7 +50,7 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         // Make the zombie take damage
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKey(KeyCode.Mouse0))
         {
             TakeDamage(10);
         }

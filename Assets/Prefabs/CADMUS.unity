@@ -6230,7 +6230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWeapon: 1
-  isShooting: 0
+  isShooting: 1
   readyToShoot: 0
   shootingDelay: 2
   bulletsPerBurst: 3
