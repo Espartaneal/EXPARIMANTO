@@ -106,6 +106,7 @@ public class Weapon : MonoBehaviour
             FireWeapon();
 
             }
+        
         if (AmmoManager.Instance.ammodisplay != null)
         {
             AmmoManager.Instance.ammodisplay.text = $"{bulletsLeft/bulletsPerBurst}/{magazineSize/bulletsPerBurst}";
