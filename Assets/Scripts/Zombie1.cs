@@ -4,14 +4,29 @@ using UnityEngine;
 
 public class Zombie1 : MonoBehaviour
 {
-    public ZombieHand1 zombieHand1;
+    
+   [SerializeField] private int HP = 100;
+   private Animator animator;
+    
+    
+   private void Start()
+   {
+     animator = GetComponent<Animator>();
+    
+   }
 
-    public int zombieDamage;
-
-
-    private void Start()
-    {
-        zombieHand1.damage = zombieDamage;
-    }
+   public void TakeDamage(int damageAmount)
+   {
+     HP =- damageAmount;
+     if (HP <= 0)
+     {
+        animator.SetTrigger("DIE");
+     }
+     else
+     {
+        animator.SetTrigger("DAMAGE");
+     }
+     
+   }
 
 }

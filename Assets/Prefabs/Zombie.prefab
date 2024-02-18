@@ -1991,7 +1991,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 135.79, y: -20.4, z: -51.92}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 3, y: 3, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6898688828583117177}
@@ -2101,8 +2101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475745e1deaadd745b0a99a17a0550f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieHand1: {fileID: 7300036474554313957}
-  zombieDamage: 20
+  HP: 100
 --- !u!1 &7464491391369086049
 GameObject:
   m_ObjectHideFlags: 0
