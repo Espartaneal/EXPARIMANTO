@@ -5,12 +5,13 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 public class Weapon : MonoBehaviour
 {
     
 
     public bool isWeapon;
-    
+    public int weaponDamage;
     //Shooting
     public bool isShooting, readyToShoot;
     bool allowReset = true;
@@ -67,6 +68,15 @@ public class Weapon : MonoBehaviour
 
      if(isWeapon) 
      {
+        if(Input.GetMouseButton(1))
+        {
+            animator.SetBool("isADS", true);
+
+        }
+        else
+        {
+            animator.SetBool("isADS", false);
+        }
         if(bulletsLeft == 0 && isShooting)
         {
             SoundManager.Instance.emptyMagazineSound1911.Play();
@@ -96,7 +106,11 @@ public class Weapon : MonoBehaviour
             FireWeapon();
 
             }
+        if (AmmoManager.Instance.ammodisplay != null)
+        {
+            AmmoManager.Instance.ammodisplay.text = $"{bulletsLeft/bulletsPerBurst}/{magazineSize/bulletsPerBurst}";
 
+        }
             
         {
             
@@ -121,6 +135,9 @@ public class Weapon : MonoBehaviour
 
         GameObject bullet = Instantiate(bulletPrefab, bulletspawn.position, Quaternion.identity);
 
+        Bullet bullet1 = bullet.GetComponent<Bullet>();
+        bullet1.bulletDamage = weaponDamage;
+        
         bullet.transform.forward = shootingDirection;
 
         
